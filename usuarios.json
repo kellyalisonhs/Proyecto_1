@@ -1,0 +1,22 @@
+[{
+    "user":"Kelly",
+    "email":"kelly@dominio.mx",
+    "question":"Color favorito",
+    "answer":"aaaaaaaaaa",
+    "passwd":"bbbbbbbbbb"  
+ },
+ {
+     "user":"Magali",
+     "email":"magali@dominio.mx",
+     "question":"Lugar favorito",
+     "answer":"cccccccccc",
+     "passwd":"dddddddddd"  
+  },
+  {
+     "user":"Yaretzi",
+     "email":"yaretzi@dominio.mx",
+     "question":"Materia favorita",
+     "answer":"eeeeeeeeee",
+     "passwd":"ffffffffff"  
+  }
+ ]
