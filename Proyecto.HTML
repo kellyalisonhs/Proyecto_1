@@ -19,7 +19,17 @@
         <label for="passwd">
             <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}">                
         </label>
-        <button type="button" id="btn">Ingresar</button>            
+        
+        <button type="button" id="btn" onclick="redirectToPage()">Ingresar</button>
+        
+        <script>
+            function redirectToPage() {
+                // Redirect to another page within the same repository
+                window.location.href = "";
+            }
+        </script>
+        
+        
         <div class="link-container">
             <a href="#" onclick="displayFormReg()">¿Olvidaste tu constraseña?</a>
             <a href="#" onclick="displayFormCon()">Registrarse</a>
