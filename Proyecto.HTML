@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="Proyecto.css">  
 </head>
 <body>
-    <!--Formulario de inicio de sesion -->
+    <!--Formulario de inicio de sesión -->
     <form action="#" name="formIS" id="formIS">                        
         <div class="form-title">
-            <h2>Inicio de Sesión</h2>        
+            <h2>Inicio de sesión</h2>        
         </div>
         <label for="username">
             <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>                
@@ -20,12 +20,12 @@
         </label>
         <button type="button" id="btn">Ingresar</button>            
         <div class="link-container">
-            <a href="#" onclick="displayFormReg()">Registrarse</a>
-            <a href="#" onclick="displayFormCon()">Recuperar contraseña </a>
+            <a href="#" onclick="displayFormReg()">¿Olvidaste tu constraseña?</a>
+            <a href="#" onclick="displayFormCon()">Registrarse</a>
         </div>
     </form>   
-     <!--Formulario de inicio de registro  -->
-     <form action="#" name="formReg" id="formReg">            
+     <!--Formulario de registro-->
+    <form action="#" name="formReg" id="formReg">
         <div class="form-title">
             <h3>Registro</h3>
         </div>
@@ -38,7 +38,7 @@
         <label for="passwd">
             <input type="password" placeholder="Confirmar Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
         </label>
-        <!--Validacion de contraseña -->
+        <!--Validación de contraseña -->
         <label for ="Correo electronico">
             <input type="email" placeholder="Correo electronico" name="Correo electronico" pattern="[A-Za-z0-9]{4,8}" required> 
         </label>
@@ -48,62 +48,62 @@
         <label for="response">
             <input type="text" placeholder="Respuesta a pregunta" name="response" pattern="[A-Za-z]+" required>                
         </label>
-        <button type="button" id="btn">Registrar</button>            
+        <button type="button" id="btn">Registrarse</button>            
         <div class="link-container">
-            <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
+            <a href="#" onclick="displayFormIS()">Iniciar sesión</a>
             <a href="#" onclick="displayFormCon()">Recuperar contraseña </a>
         </div>
-              <!--Tercer formulario recuperar contraseña  -->
-<form action="#" name="formCon" id="formCon">            
-    <div class="form-title">
-        <h2>Recuperar Contraseña</h2>
-    </div>
-    <label for="question">
-        <input type="text" placeholder="Pregunta de recuperación" name="question" pattern="[A-Za-z]+" required>                
-    </label>
-    <label for="response">
-        <input type="text" placeholder="Respuesta a pregunta" name="response" pattern="[A-Za-z]+" required>                
-    </label>
-    <button type="button" id="btn">Recuperar contraseña </button>            
-    <div class="link-container">
-        <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
-        <a href="#" onclick="displayFormCorreo()">Recuperar contraseña con correo </a>
-        <a href="#" onclick="displayFormCam()">Cambiar contraseña </a>
-    </div>   
-</form>
-           <!--Cuarto formulario contraseña con correo -->
-<form action="#" name="formConC" id="formConC">            
-    <div class="form-title">
-        <h2>Recuperar Contraseña con correo </h2>
-    </div>
-    <label for="email">
-        <input type="text" placeholder="Correo" name="response" pattern="[A-Za-z]+" required>                
-    </label>
-    <button type="button" id="btn">Recuperar contraseña con correo  </button>            
-    <div class="link-container">
-        <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
-
-</div>
-</form>
-<!--Quinto cuestionario cambio de contraseña -->
-<form action="#" name="formCam" id="formCam">            
-    <div class="form-title">
-        <h2>Cambio de Contraseña</h2>
-    </div>
-    <label for="username">
-        <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>
-    </label>
-    <label for="passwd">
-        <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
-    </label>
-    <label for="passwd">
-        <input type="password" placeholder="Confirmar contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
-    </label>
-    <button type="button" id="btn">Cambio de contraseña</button>            
-    <div class="link-container">
-        <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
-    </div>
-</form>  
+    </form>
+    <!--Tercer formulario recuperar contraseña  -->
+    <form action="#" name="formCon" id="formCon">            
+        <div class="form-title">
+            <h2>Recuperar contraseña</h2>
+        </div>
+        <label for="question">
+            <input type="text" placeholder="Pregunta de recuperación" name="question" pattern="[A-Za-z]+" required>                
+        </label>
+        <label for="response">
+            <input type="text" placeholder="Respuesta a pregunta" name="response" pattern="[A-Za-z]+" required>                
+        </label>
+        <button type="button" id="btn">Recuperar contraseña </button>            
+        <div class="link-container">
+            <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
+            <a href="#" onclick="displayFormCorreo()">Recuperar contraseña con correo </a>
+            <a href="#" onclick="displayFormCam()">Cambiar contraseña </a>
+        </div>   
+    </form>
+    <!--Cuarto formulario contraseña con correo -->
+    <form action="#" name="formConC" id="formConC">            
+        <div class="form-title">
+            <h2>Recuperar Contraseña con correo </h2>
+        </div>
+        <label for="email">
+            <input type="text" placeholder="Correo" name="response" pattern="[A-Za-z]+" required>                
+        </label>
+        <button type="button" id="btn">Recuperar contraseña con correo  </button>            
+        <div class="link-container">
+            <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
+        </div>
+    </form>
+    <!--Quinto cuestionario cambio de contraseña -->
+    <form action="#" name="formCam" id="formCam">            
+        <div class="form-title">
+            <h2>Cambio de Contraseña</h2>
+        </div>
+        <label for="username">
+            <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Confirmar contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <button type="button" id="btn">Cambio de contraseña</button>            
+        <div class="link-container">
+            <a href="#" onclick="displayFormIS()">Iniciar Sesión</a>
+        </div>
+    </form>  
 </section>
 </body>
 </html>
