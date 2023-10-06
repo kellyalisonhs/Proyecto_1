@@ -6,14 +6,15 @@
   }
   
   #section-content{
-    width: 90%;
-    height: 500px;
-    border: 1px solid black;
+    width: 80%;
+    height: auto;
+    border: 1.5px solid rgba(6, 6, 6, 0.337);
     flex:3;
+    margin: 3px auto;
   }
   
   #section-form{
-      /*border: 1px solid rgb(13, 20, 165);*/
+      border: 1px solid rgb(251, 251, 255);
       flex:1;
       padding: 50px;    
       align-self: center;
@@ -74,7 +75,7 @@
   }
   
   form .link-container a:hover{
-    color:black;
+    color:rgb(34, 33, 33);
   }
   
   #section-form #formConC {
@@ -94,3 +95,16 @@
   }
 
 
+ #img_web{
+    width: 100PX; /* Ajusta la imagen al ancho del contenedor padre */
+    height: auto; /* Mantiene la proporción de aspecto */
+    border: 2px solid #333; /* Borde de 2 píxeles de grosor y color gris oscuro (#333) */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra con desplazamiento horizontal y vertical */
+    border-radius: 10px; /* Redondea las esquinas en 10 píxeles */
+    flex-flow: row wrap;  
+    margin: 3px auto;
+}
+
+body {
+  background-color: #424245;
+}
