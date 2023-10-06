@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <link rel="stylesheet" href="Proyecto.css">  
+</head>
+<script src="olvide_contraseña.js">
+</script>
+<body>
+<main id="main">
+    <section id="section-content">
+    </section>
+    <section id="section-form">
+    <!--Formulario: inicio de sesión-->
+    <form action="#" name="formIS" id="formIS">                        
+        <div class="form-title">
+            <h2>Inicio de sesión</h2>        
+        </div>
+        <label for="username">
+            <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>                
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}">                
+        </label>
+        <button type="button" id="btn" onclick="location.href='tabla.html';">Ingresar</button>
+        <div class="link-container">
+            <a href="#" onclick="displayFormConC()">¿Olvidaste tu constraseña?</a>
+            <a href="#" onclick="displayFormReg()">Registrarse</a>
+        </div>
+    </form>
+
+    <!--Formulario: 'olvidé contraseña' con correo-->
+    <form action="#" name="formConC" id="formConC" >            
+        <div class="form-title">
+            <h2>¿Olvidaste tu contraseña?</h2>
+        </div>
+        <label for="email">
+            <input type="text" placeholder="Correo" name="response" pattern="[A-Za-z]+" required>                
+        </label>
+        <div class="link-container">
+            <a href="#" onclick="displayFormCon()">Buscar</a>
+        </div>
+    </form>
+
+    <!--Formulario: recuperar contraseña con pregunta de recuperación-->
+    <form action="#" name="formCon" id="formCon">            
+        <div class="form-title">
+            <h2>Recuperar contraseña</h2>
+        </div>
+        <label for="question">
+            <input type="text" placeholder="Pregunta de recuperación" name="question" pattern="[A-Za-z]+" required>                
+        </label>
+        <label for="response">
+            <input type="text" placeholder="Respuesta" name="response" pattern="[A-Za-z]+" required>                
+        </label>
+        <button type="button" id="btn">Enviar</button>              
+    </form>
+
+    <!--Formulario: cambio de contraseña-->
+    <form action="#" name="formCam" id="formCam" hidden="">            
+        <div class="form-title">
+            <h2>Cambiar contraseña</h2>
+        </div>
+        <label for="username">
+            <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Confirmar contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <button type="button" id="btn">Guardar</button>
+    </form>
+
+     <!--Formulario: registro-->
+    <form action="#" name="formReg" id="formReg" hidden="">
+        <div class="form-title">
+            <h2>Registro</h2>
+        </div>
+        <label for="username">
+            <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>
+        </label>
+        <label for ="Correo electronico">
+            <input type="email" placeholder="Correo electrónico" name="Correo electronico" pattern="[A-Za-z0-9]{4,8}" required> 
+        </label>
+        <label for="usertype">
+            <select id="tipo" name="tipo">
+              <option value="">Tipo</option>
+              <option value="1">Operativo</option>
+              <option value="2">Admin</option>
+            </select>
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <label for="passwd">
+            <input type="password" placeholder="Confirmar contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>                
+        </label>
+        <label for="question">
+            <input type="text" placeholder="Pregunta de recuperación" name="question" pattern="[A-Za-z]+" required>                
+        </label>
+        <label for="response">
+            <input type="text" placeholder="Respuesta" name="response" pattern="[A-Za-z]+" required>                
+        </label>
+        <button type="button" id="btn">Registrarse</button>
+    </form>
+    
+</section>
+</main>
+<script src="olvide_contraseñas.js"></script>
+</body>
+</html>
