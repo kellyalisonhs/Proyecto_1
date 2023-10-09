@@ -60,3 +60,21 @@ function registerUser(){
     else
         alert(`Error al registrar el usuario`);
 }
+
+/* function deleteUser(){
+    let userF = {
+        user:"Juan Pablo",
+        email:"juan.pablo@dominio.mx",
+        question:"Lugar favorito",
+        answer:"a48f7dfe488185fe9b9c8c723d318c66",
+        passwd:"2ff3eb9deea5be1c49585e8fa3a1f6c1"
+    } 
+ 
+    let strUser = JSON.stringify(userF);
+    let res = setUser(strUser);     
+    if (res === 0) {
+        alert(`Usuario ${userF.user} eliminado`);
+    }  
+    else
+        alert(`Error al eliminar el usuario`);
+ } */
