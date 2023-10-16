@@ -6,8 +6,14 @@
     <title>Proyecto 1</title>
     <link rel="stylesheet" href="Proyecto.css">  
 </head>
+<script src="olvide_contraseña.js">
+</script>
 <body>
-
+<main id="main">
+    <section id="section-content">
+        <img src="https://www.tuexperto.com/wp-content/uploads/2022/02/los-mejores-fondos-de-pantalla-aesthetic-para-pc-00-1080x720.jpg.webp" alt="" id="imgen_web">
+    </section>
+    <section id="section-form">
     <!--Formulario: inicio de sesión-->
     <form action="#" name="formIS" id="formIS">                        
         <div class="form-title">
@@ -21,24 +27,26 @@
         </label>
         <button type="button" id="btn" onclick="location.href='tabla.html';">Ingresar</button>
         <div class="link-container">
-            <a href="#" onclick="displayFormCon()">¿Olvidaste tu constraseña?</a>
+            <a href="#" onclick="displayFormConC()">¿Olvidaste tu constraseña?</a>
             <a href="#" onclick="displayFormReg()">Registrarse</a>
         </div>
     </form>
 
     <!--Formulario: 'olvidé contraseña' con correo-->
-    <form action="#" name="formConC" id="formConC" hidden="">            
+    <form action="#" name="formConC" id="formConC" >            
         <div class="form-title">
             <h2>¿Olvidaste tu contraseña?</h2>
         </div>
         <label for="email">
             <input type="text" placeholder="Correo" name="response" pattern="[A-Za-z]+" required>                
         </label>
-        <button type="button" id="btn">Buscar</button>
+        <div class="link-container">
+            <a href="#" onclick="displayFormCon()">Buscar</a>
+        </div>
     </form>
 
     <!--Formulario: recuperar contraseña con pregunta de recuperación-->
-    <form action="#" name="formCon" id="formCon" hidden="">            
+    <form action="#" name="formCon" id="formCon">            
         <div class="form-title">
             <h2>Recuperar contraseña</h2>
         </div>
@@ -102,5 +110,7 @@
     </form>
     
 </section>
+</main>
+<script src="olvide_contraseñas.js"></script>
 </body>
 </html>
