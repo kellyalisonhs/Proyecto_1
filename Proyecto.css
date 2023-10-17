@@ -1,82 +1,99 @@
-#main{
-    width: 95%; 
-    height: auto;
-    margin:20px auto;
-    display: flex;    
-  }
+/* Contenedor Principal */
+#main {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contenido */
+#section-content {
+  width: 70%;
   
-  #section-content{
-    width: 90%;
-    height: 500px;
-    border: 1px solid black;
-    flex:3;
-  }
+ 
+height: 500px;
+  border: 1px solid black;
+}
+
+/* Formulario */
+#section-form {
+  width: 25%;
   
-  #section-form{
-      /*border: 1px solid blue;*/    
-      flex:1;
-      padding: 50px;    
-      align-self: center;
-  }
+ 
+padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
   
-  #section-form h2{
-     text-align: center;
-  }
+ 
+align-items: center;
   
-  #section-form form{
-      /*border: 1px solid green;*/
-      display: flex;
-      flex-flow: row wrap;        
-  }
+ 
+width: 100%;
+}
+
+form #btn {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  margin: 10px 0;
+  background-color: #33A8FF;
+  color: white;
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
   
-  form #btn{
-    width: 300px;  
-    height: 30px;
-    margin:10px;  
-    background-color: #33A8FF;  
-    color: white;
-    cursor: pointer; 
-    
-  }
-  
-  form input {
-    width: 300px;  
-    height: 30px;
-    margin:10px;
-  }
-  
-   form input:invalid {
-    border: 2px solid red;
-    }
-    form input:valid {
-      border: 2px solid green;
-    }
-  form a{
-    margin-right: 15px;  
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  form a:hover{
-    color:green;
-  }
-  
-  form .link-container, form .form-title{
-    width: 300px;
-    text-align: center;
-  }
-  
-  
-  
-  form .link-container a{
-    font-size: 1.2rem;
-    color:#7a8106;
-  }
-  
-  form .link-container a:hover{
-    color:black;
-  }
-  
-  #section-form #formReg {
-    display: none;
-  }
+ 
+padding: 5px;
+  box-sizing: border-box;
+}
+
+form input:invalid {
+  border-color: red;
+}
+
+form input:valid {
+  border-color: green;
+}
+
+form a {
+
+text-decoration: none;
+  font-size: 1.1rem;
+}
+
+form a:hover {
+  color: green;
+}
+
+.form-links {
+  display: flex;
+justify-content: center;
+  margin-top: 20px;
+}
+
+.form-links a {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: #7a8106;
+}
+
+.form-links a:hover {
+  color: black;
+}
