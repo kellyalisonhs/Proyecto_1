@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="olvide_contraseñas.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Proyecto.css">
+    <style>
+        /* Estilos para el enlace de "Volver a Inicio de Sesión" */
+        .return-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="Titulo">Bienvenidos</h1>
+        <form class="form" name="formReg">
+            <!-- Contenido del formulario de registro -->
+            <div class="form-title">
+                <h2>Registro</h2>
+            </div>
+            <label for="username">
+                <input type="text" placeholder="Usuario" name="username" pattern="[a-zA-Z]+" required>
+            </label>
+            <label for="Correo electronico">
+                <input type="email" placeholder="Correo electrónico" name="Correo electronico" pattern="[A-Za-z0-9]{4,8}" required>
+            </label>
+            <label for="usertype">
+                <select id="tipo" name="tipo">
+                    <option value="">Tipo</option>
+                    <option value="1">Operativo</option>
+                    <option value="2">Admin</option>
+                </select>
+            </label>
+            <label for="passwd">
+                <input type="password" placeholder="Contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>
+            </label>
+            <label for="passwd">
+                <input type="password" placeholder="Confirmar contraseña" name="passwd" pattern="[A-Za-z0-9!?-]{4,8}" required>
+            </label>
+            <label for="question">
+                <input type="text" placeholder="Pregunta de recuperación" name="question" pattern="[A-Za-z]+" required>
+            </label>
+            <label for="response">
+                <input type="text" placeholder="Respuesta" name="response" pattern="[A-Za-z]+" required>
+            </label>
+            <button type="button" id="btn">Registrarse</button>
+        </form>
+        
+        <!-- Enlace para regresar al formulario de inicio de sesión -->
+        <a class="return-link" href="login.html">Volver a Inicio de Sesión</a>
+    </div>
+</body>
+</html>
