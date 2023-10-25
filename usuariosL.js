@@ -11,70 +11,24 @@ function getAllUsers(a) {
                 listaUsuarios = JSON.parse(this.responseText); // recupera la respuesta en un objeto Javascript
                     
             let tabla = document.querySelector("#lista");            
-                let row, col1, col2;
+                let row, col1, col2, col3;
                 console.log(listaUsuarios);
 
-            /* Se añade título de la tabla */            
-                    
+            /* Se añade título de la tabla */
             listaUsuarios.forEach(objeto => {           
                 row = document.createElement('tr');     
                 col1 = document.createElement('td');
                 col2 = document.createElement('td');
-                col1.innerHTML=`${objeto.user}`;
-                col2.innerHTML=`${objeto.email}`;
+                col3 = document.createElement('td');
+                col1.innerHTML = `${objeto.user}`;
+                col2.innerHTML = `${objeto.email}`;
+                col3.innerHTML = `${objeto.url()}`
                 row.appendChild(col1);
                 row.appendChild(col2);
+                row.appendChild(col3);
                 tabla.appendChild(row);
             });
         }
     };
     http.send();
 }
-
-function setUser(user){
-    
-    if (user != null) {      
-        listaUsuarios.push(user);   
-        alert (listaUsuarios[3].user);
-        error = 0;      
-    }  
-        else
-        error = 1;
-    return error;
-}
-
-function registerUser(){
-    let userF = {
-        user:"Juan Pablo",
-        email:"juan.pablo@dominio.mx",
-        question:"Lugar favorito",
-        answer:"a48f7dfe488185fe9b9c8c723d318c66",
-        passwd:"2ff3eb9deea5be1c49585e8fa3a1f6c1"        
-    } 
-
-    let strUser = JSON.stringify(userF);
-    let res = setUser(strUser);     
-    if (res === 0) {
-        alert(`Usuario ${userF.user} registrado`);
-    }  
-    else
-        alert(`Error al registrar el usuario`);
-}
-
-/* function deleteUser(){
-    let userF = {
-        user:"Juan Pablo",
-        email:"juan.pablo@dominio.mx",
-        question:"Lugar favorito",
-        answer:"a48f7dfe488185fe9b9c8c723d318c66",
-        passwd:"2ff3eb9deea5be1c49585e8fa3a1f6c1"
-    } 
- 
-    let strUser = JSON.stringify(userF);
-    let res = setUser(strUser);     
-    if (res === 0) {
-        alert(`Usuario ${userF.user} eliminado`);
-    }  
-    else
-        alert(`Error al eliminar el usuario`);
- } */

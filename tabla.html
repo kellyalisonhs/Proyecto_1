@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de usuarios registrados</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="usuariosL.js"></script>
     <link rel="stylesheet" href="styleList.css">
 </head>
 
@@ -15,23 +17,22 @@
         <div class="usuarios-box">
             <table id="lista">
                 <thead>
-                    <th>Nombre de usuario</th>
-                    <th>Correo electrónico</th>
-                    <th></th>
+                    <tr>
+                        <th>Usuario</th>        
+                        <th>Correo electronico</th>        
+                        <th>Eliminar usuario</th>        
+                    </tr>
                 </thead>
+                <tbody id="tbody"></tbody>
             </table>
         </div>
-        
-        <br>
-        <button type="button" onclick="deleteUser();">Eliminar usuario</button>
     </div> 
+
     <script src="lib/md5.min.js"> </script>
     <script src="usuariosL.js"></script>
     <script>
-        let str = md5('morado');
-        console.log(str);
         getAllUsers()
     </script>
-</body>
 
+</body>
 </html>
