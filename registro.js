@@ -23,27 +23,27 @@ function validar(formulario) {
 }
 
 function registrar(formulario) {
- if (validar(formulario)) {
-    let username = formulario.username.value;
-    let correo_electronico = formulario.correo_electronico.value;
-    let usertype = formulario.usertype.value;
-    let password = formulario.password.value;
-    let recoveryQuestion = formulario.recoveryQuestion.value;
-    let answer = formulario.answer.value;
+    if (validar(formulario)) {
+        let username = formulario.username.value;
+        let correo_electronico = formulario.correo_electronico.value;
+        let usertype = formulario.usertype.value;
+        let password = formulario.password.value;
+        let recoveryQuestion = formulario.recoveryQuestion.value;
+        let answer = formulario.answer.value;
 
-    let nuevoUsuario = {
-        username,
-        correo_electronico,
-        usertype,
-        password,
-        recoveryQuestion,
-        answer
-    };
+        let nuevoUsuario = {
+            username,
+            correo_electronico,
+            usertype,
+            password,
+            recoveryQuestion,
+            answer
+        };
 
-    usuarios.push(nuevoUsuario);
-    alert("Usuario registrado con éxito");
-    formulario.reset();
- }
+        usuarios.push(nuevoUsuario);
+        alert("Usuario registrado con éxito");
+        formulario.reset();
+    }
 }
 
 function ingresar(formulario) {

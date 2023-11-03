@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de usuarios registrados</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="usuariosL.js"></script>
     <link rel="stylesheet" href="styleList.css">
 </head>
 
@@ -20,7 +19,7 @@
                     <tr>
                         <th>Usuario</th>        
                         <th>Correo electronico</th>        
-                        <th>Eliminar usuario</th>        
+                        <th>Acciones</th>        
                     </tr>
                 </thead>
                 <tbody id="tbody"></tbody>
@@ -29,9 +28,9 @@
     </div> 
 
     <script src="lib/md5.min.js"> </script>
-    <script src="usuariosL.js"></script>
+    <script src="tabla.js"></script>
     <script>
-        getAllUsers()
+        getAllUsers();
     </script>
 
 </body>
