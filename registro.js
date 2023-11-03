@@ -43,21 +43,11 @@ function registrar(formulario) {
         usuarios.push(nuevoUsuario);
         alert("Usuario registrado con éxito");
         formulario.reset();
+
+        // Guardar los datos en un archivo JSON
+        fs.writeFile('usuarios.json', JSON.stringify(usuarios), (err) => {
+            if (err) throw err;
+            console.log('Los datos se han guardado en el archivo usuarios.json.');
+        });
     }
-}
-
-function ingresar(formulario) {
-    let username = formulario.username.value;
-    let password = formulario.password.value;
-
-    for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].username === username && usuarios[i].password === password) {
-        alert("Usuario autenticado con éxito");
-        formulario.reset();
-        return true;
-        }
-    }
-
-    alert("Usuario o contraseña incorrecta");
-    return false;
 }

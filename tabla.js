@@ -71,7 +71,7 @@ async function eliminarUsuario(id) {
 function setUser(user){   
     if (user != null) {      
         listaUsuarios.push(user);   
-        alert (listaUsuarios[3].user);
+        alert (listaUsuarios[listaUsuarios.length].user);
         error = 0;      
     } else
         error = 1;
