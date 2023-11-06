@@ -1,15 +1,16 @@
-function datosEnviados(){ 
-    // se accede al campo de texto username del formulario
-    // formIS es el name del form y username es el name del input
-    // del que se recupera el valor que ingres el usuario.
+//Funcion para buscar el usuario
+function olvid_contraseña(){ 
       let user = document.formIS.username.value;
-      let passwd = document.formIS.passwd.value;
-      // getElementById permite acceder a un elemento HTML,
-      // en este caso a la sección donde se muestra el nombre de usuario.
-      // innerHTML insert contenido HTML al elemento seleccionado
-      
-      if (user.match(/^[a-zA-Z]+$/) && passwd.match(/^[A-Za-z0-9!?-]{4,8}$/) ) 
-         document.getElementById("section-content").innerHTML="Bienvenido "+user;          
+      //Comparación entre los dos valores
+      for(i = 0; i < listaUsuarios.length; i++)
+      {
+        if(user == listaUsuarios[i])
+        {
+          alert("Usuario encontrado que deseas realizar.");
+        } else {
+          alert("Usuario no encontrado.");
+        }
+      }         
    };
    
    function displayFormIS(){
@@ -32,5 +33,7 @@ function datosEnviados(){
     formConC.style.display = "none";
     formCon.style.display="block";
   }
+
+  
 
  
