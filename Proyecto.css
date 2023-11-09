@@ -1,110 +1,139 @@
-#main{
-    width: 95%; 
-    height: auto;
-    margin:20px auto;
-    display: flex;    
-  }
-  
-  #section-content{
-    width: 80%;
-    height: auto;
-    border: 1.5px solid rgba(6, 6, 6, 0.337);
-    flex:3;
-    margin: 3px auto;
-  }
-  
-  #section-form{
-      border: 1px solid rgb(251, 251, 255);
-      flex:1;
-      padding: 50px;    
-      align-self: center;
-  }
-  
-  #section-form h2{
-     text-align: center;
-  }
-  
-  #section-form form{
-      /*border: 1px solid green;*/
-      display: flex;
-      flex-flow: row wrap;        
-  }
-  
-  form #btn{
-    width: 300px;  
-    height: 30px;
-    margin:10px;  
-    background-color: #33A8FF;  
-    color: white;
-    cursor: pointer; 
+* {
+   
+  margin: 0;
+    padding: 0;
     
+   
+  box-sizing: border-box;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0faff; 
+    background-image: url('https://dbdzm869oupei.cloudfront.net/img/photomural/preview/70518.png'); 
+    background-size: cover;
+    background-position: center;
+}
+  
+  .wrapper {
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    border-radius: 12px;
+  padding: 20px 30px 120px;
+    background: #fafafa;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
   }
   
-  form input {
-    width: 300px;  
-    height: 30px;
-    margin:10px;
+  .form {
+    display: flex;
+  flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
   }
   
-   form input:invalid {
-    border: 2px solid red;
-    }
-    form input:valid {
-      border: 2px solid green;
-    }
-  form a{
-    margin-right: 15px;  
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  form a:hover{
-    color:rgb(45, 0, 128);
-  }
-  
-  form .link-container, form .form-title{
-    width: 300px;
+  .form-title h2 {
+    font-size: 30px;
     text-align: center;
+    color: #ef76df;
+    font-weight: 600;
   }
   
-  
-  
-  form .link-container a{
-    font-size: 1rem;
-    color:#270681;
+  label {
+    position: relative;
   }
   
-  form .link-container a:hover{
-    color:rgb(34, 33, 33);
+  input {
+    height: 60px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    
+   
+  font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 8px;
+    background: #fff;
+    width: 100%;
+  }
+  .Titulo {
+    font-size: 48px;  
+text-align: center; 
+    color: #ff69b4; 
+    font-weight: 800;
+    margin-bottom: 20px;
+} 
+  select {
+   
+  height: 60px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    
+  border-radius: 8px;
+    
+   
+  background: #fff;
+    width: 100%;
   }
   
-  #section-form #formConC {
-    display: none;
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-
-  #section-form #formCon {
-    display: none;
+  
+  .checkbox input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+    accent-color: #fff;
+    cursor: pointer;
   }
-
-  #section-form #formCam {
-    display: none;
+  
+  .checkbox label {
+    cursor: pointer;
+    color: #fff;
   }
-
-  #section-form #formReg {
-    display: none;
+  
+  button {
+    height: 60px;
+    font-size: 18px;
+    
+   
+  font-weight: 500;
+    cursor: pointer;
+    border: none;
+    
+   
+  border-radius: 8px;
+    width: 100%;
   }
-
-
- #img_web{
-    width: 100PX; /* Ajusta la imagen al ancho del contenedor padre */
-    height: auto; /* Mantiene la proporción de aspecto */
-    border: 2px solid #333; /* Borde de 2 píxeles de grosor y color gris oscuro (#333) */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Sombra con desplazamiento horizontal y vertical */
-    border-radius: 10px; /* Redondea las esquinas en 10 píxeles */
-    flex-flow: row wrap;  
-    margin: 3px auto;
-}
-
-body {
-  background-color: #424245;
-}
+  
+  .form.login input[type="submit"] {
+    background: #f4f4f5;
+    color: #fff;
+  }
+  
+  .link-container {
+    display: flex;
+    justify-content: space-between;
+    
+   
+  align-items: center;
+  }
+  
+  .link-container a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .link-container a:hover {
+    text-decoration: underline;
+  }
