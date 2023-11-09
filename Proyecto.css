@@ -1,19 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> MagaliG
-    * {
-=======
 * {
->>>>>>> 3dfc1a46aa4b570a1fe59a3d794fc197cd8ab456
-   
   margin: 0;
     padding: 0;
     
    
   box-sizing: border-box;
-<<<<<<< HEAD
   }
   body {
     min-height: 100vh;
@@ -146,8 +136,6 @@ text-align: center;
   .link-container a:hover {
     text-decoration: underline;
   }
-<<<<<<< HEAD
-=======
 /* Contenedor Principal */
 #main {
   width: 95%;
@@ -247,9 +235,7 @@ justify-content: center;
 .form-links a:hover {
   color: black;
 }
->>>>>>> df966acc1cb6834e7676b0d927d1c73303ca99f2
-=======
-  }
+
   body {
     min-height: 100vh;
     display: flex;
@@ -381,6 +367,3 @@ text-align: center;
   .link-container a:hover {
     text-decoration: underline;
   }
->>>>>>> 3dfc1a46aa4b570a1fe59a3d794fc197cd8ab456
-=======
->>>>>>> MagaliG
