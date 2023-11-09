@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     * {
    
   margin: 0;
@@ -137,3 +138,104 @@ text-align: center;
   .link-container a:hover {
     text-decoration: underline;
   }
+=======
+/* Contenedor Principal */
+#main {
+  width: 95%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Contenido */
+#section-content {
+  width: 70%;
+  
+ 
+height: 500px;
+  border: 1px solid black;
+}
+
+/* Formulario */
+#section-form {
+  width: 25%;
+  
+ 
+padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  
+ 
+align-items: center;
+  
+ 
+width: 100%;
+}
+
+form #btn {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  margin: 10px 0;
+  background-color: #33A8FF;
+  color: white;
+  cursor: pointer;
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+  height: 30px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  
+ 
+padding: 5px;
+  box-sizing: border-box;
+}
+
+form input:invalid {
+  border-color: red;
+}
+
+form input:valid {
+  border-color: green;
+}
+
+form a {
+
+text-decoration: none;
+  font-size: 1.1rem;
+}
+
+form a:hover {
+  color: green;
+}
+
+.form-links {
+  display: flex;
+justify-content: center;
+  margin-top: 20px;
+}
+
+.form-links a {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: #7a8106;
+}
+
+.form-links a:hover {
+  color: black;
+}
+>>>>>>> df966acc1cb6834e7676b0d927d1c73303ca99f2
